@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador re inteligente</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 100dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+        max-height: 60dvh;
+        background-color: rgb(224, 222, 222);
+        border-radius: 10px;
+        padding: 1dvh;
+        overflow-x: auto;
+        button{
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin-bottom: 3dvh;
+        }
+    }
+    .tabla{
+        width: 100%;
+        /* max-height: 50%; */
+        border-radius: 10px;
+        /* overflow-x: auto; */
+        /* border-collapse: collapse; */
+        tr{
+            td, th{
+                padding: 5px;
+                border: 1px solid black;
+            }
+        }
+    }
+    .barra{
+        padding: 5px 10px ;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <center>
+        <div class="container">
+            <div class="card">
+                <h1>Buscador inteligente</h1>
+                <br><br>
+                <input type="text" class="barra" id="barra" placeholder="Escribe parab uscar productos...">
+                <br><br>
+                <button id="buscar">Buscar</button>
+                <table class="tabla" id="tabla">
+                </table>
+            </div>
+        </div>
+        <script src="./indexx.js"></script>
+    </center>
+</body>
+</html>
